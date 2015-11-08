@@ -12,11 +12,12 @@
 #' For each segment you will find a log2 - 1 score 
 #' (0 means there is no duplication nor deletion)
 #' 
-#' @format NULL
 #' @source \url{http://gdac.broadinstitute.org/}
 #' 
+#' @family RTCGA
 #' @name get_region_cnv_score
-
+#' @rdname get_region_cnv_score
+#' @export
 get.region.cnv.score <- function(chr="12", start=69240000, stop=69200000) {
   list_cnv <- data(package="RTCGA.cnv")
   datasets <- list_cnv$results[,"Item"]

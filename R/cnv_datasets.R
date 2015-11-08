@@ -2,7 +2,13 @@
 #' cnv datasets from TCGA project
 #'
 #' Package provides cnv datasets from The Cancer Genome Atlas Project for all cohorts types from \url{http://gdac.broadinstitute.org/}.
-#' Data were downloaded using \link{RTCGA-package}. The process is described here: \url{http://mi2-warsaw.github.io/RTCGA.data/}.
+#' Data were downloaded using \link{RTCGA-package} and contain snapshots for the date: \code{2015-08-21}. The process is described here: \url{http://mi2-warsaw.github.io/RTCGA.data/}.
+#' Use cases, examples and information about datasets in \pkg{RTCGA.data} family can be found here: \code{browseVignettes("RTCGA")}
+#' Data format is explained here https://wiki.nci.nih.gov/display/TCGA/Retrieving+Data+Using+the+Data+Matrix
+#' 
+#' @details \code{browseVignettes("RTCGA")}
+#' 
+#' @return Data frames with mutations data.
 #' 
 #' @import RTCGA
 #' @format NULL
@@ -16,140 +22,180 @@
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "BLCA.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "BRCA.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "CESC.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "CHOL.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "COAD.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "COADREAD.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "DLBC.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "ESCA.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "GBM.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "GBMLGG.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "HNSC.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "KICH.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "KIPAN.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "KIRC.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "KIRP.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "LAML.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "LGG.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "LIHC.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "LUAD.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "LUSC.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "MESO.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "OV.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "PAAD.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "PCPG.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "PRAD.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "READ.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "SARC.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "SKCM.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "STAD.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
+"STES.cnv"
+#' @name cnv
+#' @rdname cnv
+#' @format NULL
+#' 
 "TGCT.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "THCA.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "THYM.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "UCEC.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "UCS.cnv"
 #' @name cnv
 #' @rdname cnv
 #' @format NULL
+#' 
 "UVM.cnv"
