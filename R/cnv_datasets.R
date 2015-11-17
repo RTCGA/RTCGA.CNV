@@ -1,201 +1,201 @@
 #' 
-#' cnv datasets from TCGA project
+#' CNV datasets from TCGA project
 #'
-#' Package provides cnv datasets from The Cancer Genome Atlas Project for all cohorts types from \url{http://gdac.broadinstitute.org/}.
+#' Package provides CNV datasets from The Cancer Genome Atlas Project for all cohorts types from \url{http://gdac.broadinstitute.org/}.
 #' Data were downloaded using \link{RTCGA-package} and contain snapshots for the date: \code{2015-08-21}. The process is described here: \url{http://mi2-warsaw.github.io/RTCGA.data/}.
 #' Use cases, examples and information about datasets in \pkg{RTCGA.data} family can be found here: \code{browseVignettes("RTCGA")}
 #' Data format is explained here https://wiki.nci.nih.gov/display/TCGA/Retrieving+Data+Using+the+Data+Matrix
 #' 
 #' @details \code{browseVignettes("RTCGA")}
 #' 
-#' @return Data frames with mutations data.
+#' @return Data frames with CNV data.
 #' 
 #' @import RTCGA
 #' @format NULL
 #' @source \url{http://gdac.broadinstitute.org/}
 #' 
-#' @name cnv
-#' @rdname cnv
-#' @aliases ACC.cnv,BLCA.cnv,BRCA.cnv,CESC.cnv,CHOL.cnv,COAD.cnv,COADREAD.cnv,DLBC.cnv,ESCA.cnv,GBM.cnv,GBMLGG.cnv,HNSC.cnv,KICH.cnv,KIPAN.cnv,KIRC.cnv,KIRP.cnv,LAML.cnv,LGG.cnv,LIHC.cnv,LUAD.cnv,LUSC.cnv,MESO.cnv,OV.cnv,PAAD.cnv,PCPG.cnv,PRAD.cnv,READ.cnv,SARC.cnv,SKCM.cnv,STAD.cnv,TGCT.cnv,THCA.cnv,THYM.cnv,UCEC.cnv,UCS.cnv,UVM.cnv
+#' @name CNV
+#' @rdname CNV
+#' @aliases ACC.CNV,BLCA.CNV,BRCA.CNV,CESC.CNV,CHOL.CNV,COAD.CNV,COADREAD.CNV,DLBC.CNV,ESCA.CNV,GBM.CNV,GBMLGG.CNV,HNSC.CNV,KICH.CNV,KIPAN.CNV,KIRC.CNV,KIRP.CNV,LAML.CNV,LGG.CNV,LIHC.CNV,LUAD.CNV,LUSC.CNV,MESO.CNV,OV.CNV,PAAD.CNV,PCPG.CNV,PRAD.CNV,READ.CNV,SARC.CNV,SKCM.CNV,STAD.CNV,TGCT.CNV,THCA.CNV,THYM.CNV,UCEC.CNV,UCS.CNV,UVM.CNV
 #' 
-"ACC.cnv"
-#' @name cnv
-#' @rdname cnv
+"ACC.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"BLCA.cnv"
-#' @name cnv
-#' @rdname cnv
+"BLCA.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"BRCA.cnv"
-#' @name cnv
-#' @rdname cnv
+"BRCA.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"CESC.cnv"
-#' @name cnv
-#' @rdname cnv
+"CESC.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"CHOL.cnv"
-#' @name cnv
-#' @rdname cnv
+"CHOL.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"COAD.cnv"
-#' @name cnv
-#' @rdname cnv
+"COAD.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"COADREAD.cnv"
-#' @name cnv
-#' @rdname cnv
+"COADREAD.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"DLBC.cnv"
-#' @name cnv
-#' @rdname cnv
+"DLBC.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"ESCA.cnv"
-#' @name cnv
-#' @rdname cnv
+"ESCA.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"GBM.cnv"
-#' @name cnv
-#' @rdname cnv
+"GBM.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"GBMLGG.cnv"
-#' @name cnv
-#' @rdname cnv
+"GBMLGG.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"HNSC.cnv"
-#' @name cnv
-#' @rdname cnv
+"HNSC.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"KICH.cnv"
-#' @name cnv
-#' @rdname cnv
+"KICH.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"KIPAN.cnv"
-#' @name cnv
-#' @rdname cnv
+"KIPAN.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"KIRC.cnv"
-#' @name cnv
-#' @rdname cnv
+"KIRC.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"KIRP.cnv"
-#' @name cnv
-#' @rdname cnv
+"KIRP.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"LAML.cnv"
-#' @name cnv
-#' @rdname cnv
+"LAML.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"LGG.cnv"
-#' @name cnv
-#' @rdname cnv
+"LGG.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"LIHC.cnv"
-#' @name cnv
-#' @rdname cnv
+"LIHC.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"LUAD.cnv"
-#' @name cnv
-#' @rdname cnv
+"LUAD.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"LUSC.cnv"
-#' @name cnv
-#' @rdname cnv
+"LUSC.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"MESO.cnv"
-#' @name cnv
-#' @rdname cnv
+"MESO.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"OV.cnv"
-#' @name cnv
-#' @rdname cnv
+"OV.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"PAAD.cnv"
-#' @name cnv
-#' @rdname cnv
+"PAAD.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"PCPG.cnv"
-#' @name cnv
-#' @rdname cnv
+"PCPG.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"PRAD.cnv"
-#' @name cnv
-#' @rdname cnv
+"PRAD.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"READ.cnv"
-#' @name cnv
-#' @rdname cnv
+"READ.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"SARC.cnv"
-#' @name cnv
-#' @rdname cnv
+"SARC.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"SKCM.cnv"
-#' @name cnv
-#' @rdname cnv
+"SKCM.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"STAD.cnv"
-#' @name cnv
-#' @rdname cnv
+"STAD.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"STES.cnv"
-#' @name cnv
-#' @rdname cnv
+"STES.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"TGCT.cnv"
-#' @name cnv
-#' @rdname cnv
+"TGCT.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"THCA.cnv"
-#' @name cnv
-#' @rdname cnv
+"THCA.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"THYM.cnv"
-#' @name cnv
-#' @rdname cnv
+"THYM.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"UCEC.cnv"
-#' @name cnv
-#' @rdname cnv
+"UCEC.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"UCS.cnv"
-#' @name cnv
-#' @rdname cnv
+"UCS.CNV"
+#' @name CNV
+#' @rdname CNV
 #' @format NULL
 #' 
-"UVM.cnv"
+"UVM.CNV"

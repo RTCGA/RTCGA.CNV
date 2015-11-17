@@ -1,11 +1,11 @@
 ---
-title: "Using `RTCGA` package to download cnv data that are included in `RTCGA.cnv` package"
+title: "Using `RTCGA` package to download CNV data that are included in `RTCGA.CNV` package"
 subtitle: "Date of datasets release: 2015-08-21"
 author: "Przemyslaw Biecek"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Using RTCGA to download cnv data as included in RTCGA.data}
+  %\VignetteIndexEntry{Using RTCGA to download CNV data as included in RTCGA.CNV}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -32,7 +32,7 @@ if (!require(devtools)) {
     install.packages("devtools")
     require(devtools)
 }
-biocLite("MarcinKosinski/RTCGA")
+biocLite("RTCGA/RTCGA")
 ```
 
 Furthermore, `RTCGA` package transforms TCGA data to form which is convenient to use in R statistical package. Those data transformations can be a part of statistical analysis pipeline which can be more reproducible with `RTCGA`.
@@ -42,7 +42,7 @@ Use cases and examples are shown in `RTCGA` packages vignettes:
 browseVignettes("RTCGA")
 ```
 
-# How to download cnv data (i.e. copy number variation) to gain the same datasets as in RTCGA.cnv package?
+# How to download CNV data (i.e. copy number variation) to gain the same datasets as in RTCGA.CNV package?
 
 There are many available date times of TCGA data releases. To see them all just type:
 
@@ -51,7 +51,7 @@ library(RTCGA)
 checkTCGA('Dates')
 ```
 
-Version 1.0 of `RTCGA.cnv` package contains clinical datasets from `2015-08-21`.
+Version 1.0 of `RTCGA.CNV` package contains clinical datasets from `2015-08-21`.
 There were downloaded as follows (which is mainly copied from [http://marcinkosinski.github.io/RTCGA/](http://marcinkosinski.github.io/RTCGA/):
 
 ## Available cohorts
@@ -63,35 +63,36 @@ All cohort names can be checked using:
    sub("-counts", "", x=.))
 ```
 
-For all cohorts the following code downloads the cnv data.
+For all cohorts the following code downloads the CNV data.
 
 ## Downloading files
 ```{r, eval=FALSE}
-#dir.create( "data/cnv2" )
+#dir.create( "data/CNV2" )
 releaseDate <- "2015-08-21"
 for (cohort in cohorts) {
-  try(downloadTCGA( cancerTypes = cohort, destDir = "data/cnv2", date = releaseDate, dataSet = paste0(cohort,".Merge_snp__genome_wide_snp_6__broad_mit_edu__Level_3__segmented_scna_minus_germline_cnv_hg19__seg.Level_3" )),
+  try(downloadTCGA( cancerTypes = cohort, destDir = "data/CNV2", date = releaseDate, dataSet = "Merge_snp__genome_wide_snp_6__broad_mit_edu__Level_3__segmented_scna_minus_germline_cnv_hg19__seg.Level_3" ),
       silent=TRUE)
 }
 ```
 
-## Reading downloaded cnv dataset
+## Reading downloaded CNV dataset
 
-Datasets from the folder `data/cnv2` are imported and transformed into rda files.
+Datasets from the folder `data/CNV2` are imported and transformed into rda files.
 
 ```{r, eval=FALSE}
-allCNVFiles <- list.files("data/cnv2", pattern = "cnv", recursive = TRUE, full.names = TRUE)
-for (cnvFile in allCNVFiles) {
-    cnv <- read.table(cnvFile,h=T) 
-    cohortName <- gsub(gsub(cnvFile, pattern = "^[^A-Z]*", replacement = ""), pattern="[\\.-].*", replacement="")
-    name = paste0(cohortName, ".cnv")
-    assign(name, cnv)
-    save(list = name, file=paste0("data/cnv2/", name, ".rda"), compression_level = 9, compress = "xz")
+allCNVFiles <- list.files("data/CNV2", pattern = "cnv", recursive = TRUE, full.names = TRUE)
+for (CNVFile in allCNVFiles) {
+    CNV <- read.table(CNVFile,h=T) 
+     
+    cohortName <- strsplit(strsplit(CNVFile, split = "/")[[1]][4], "\\.")[[1]][1]
+    name = paste0(cohortName, ".CNV")
+    assign(name, CNV)
+    save(list = name, file=paste0("data/CNV2/", name, ".rda"), compression_level = 9, compress = "xz")
 
 }
 
 ```
 
-# Saving cnv data to `RTCGA.cnv` package
+# Saving CNV data to `RTCGA.CNV` package
 
-Now you should copy all rda files into the RTCGA.cnv package data directory.
+Now you should copy all rda files into the RTCGA.CNV package data directory.
