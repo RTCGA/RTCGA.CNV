@@ -1,6 +1,6 @@
 ---
 title: "Using `RTCGA` package to download CNV data that are included in `RTCGA.CNV` package"
-subtitle: "Date of datasets release: 2015-08-21"
+subtitle: "Date of datasets release: 2015-11-01"
 author: "Przemyslaw Biecek"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -51,8 +51,8 @@ library(RTCGA)
 checkTCGA('Dates')
 ```
 
-Version 1.0 of `RTCGA.CNV` package contains clinical datasets from `2015-08-21`.
-There were downloaded as follows (which is mainly copied from [http://marcinkosinski.github.io/RTCGA/](http://marcinkosinski.github.io/RTCGA/):
+Version 1.0 of `RTCGA.CNV` package contains clinical datasets from `2015-11-01`.
+There were downloaded as follows (which is mainly copied from [http://rtcga.github.io/RTCGA/](http://rtcga.github.io/RTCGA/):
 
 ## Available cohorts
 
@@ -68,7 +68,7 @@ For all cohorts the following code downloads the CNV data.
 ## Downloading files
 ```{r, eval=FALSE}
 #dir.create( "data/CNV2" )
-releaseDate <- "2015-08-21"
+releaseDate <- "2015-11-01"
 for (cohort in cohorts) {
   try(downloadTCGA( cancerTypes = cohort, destDir = "data/CNV2", date = releaseDate, dataSet = "Merge_snp__genome_wide_snp_6__broad_mit_edu__Level_3__segmented_scna_minus_germline_cnv_hg19__seg.Level_3" ),
       silent=TRUE)

@@ -1,14 +1,14 @@
 Package: RTCGA.CNV
 Type: Package
 Title: CNV (Copy-number variation) datasets from The Cancer Genome Atlas Project
-Version: 0.99.2
-Date: 2015-11-17
+Version: 0.99.3
+Date: 2015-12-14
 Author: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
 Maintainer: Marcin Kosinski <m.p.kosinski@gmail.com>
 Description: Package provides CNV (based on Merge snp) datasets from The Cancer
     Genome Atlas Project for all cohorts types from http://gdac.broadinstitute.org/.
     Data format is explained here https://wiki.nci.nih.gov/display/TCGA/Retrieving
-    +Data+Using+the+Data+Matrix. Data from 2015-08-21 snapshot.
+    +Data+Using+the+Data+Matrix. Data from 2015-11-01 snapshot.
 License: GPL-2
 LazyData: TRUE
 Repository: Bioconductor
