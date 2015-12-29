@@ -32,6 +32,19 @@ the get.region.cnv.score() function.
 For example, MDM2 is located on chromosome 12 positions 69240000-69200000.
 
 ```{r}
+get.region.cnv.score <- function(chr="12", start=69240000, stop=69200000) {
+  list_cnv <- data(package="RTCGA.cnv")
+  datasets <- list_cnv$results[,"Item"]
+  
+  filtered <- lapply(datasets, function(dataname) {
+    tmp <- get(dataname)
+    tmp <- tmp[tmp$Chromosome == chr,]
+    tmp <- tmp[pmin(tmp$Start, tmp$End) <= pmax(stop, start) & pmax(tmp$Start, tmp$End) >= pmin(stop, start),]
+    data.frame(tmp, cohort=dataname)
+  })
+  
+  do.call(rbind, filtered)
+}
 MDM2.scores <- get.region.cnv.score(chr="12", start=69240000, stop=69200000)
 
 # only one per patient

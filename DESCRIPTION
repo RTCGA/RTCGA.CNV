@@ -1,7 +1,7 @@
 Package: RTCGA.CNV
 Type: Package
 Title: CNV (Copy-number variation) datasets from The Cancer Genome Atlas Project
-Version: 0.99.3
+Version: 0.99.4
 Date: 2015-12-14
 Author: Przemyslaw Biecek <przemyslaw.biecek@gmail.com>
 Maintainer: Marcin Kosinski <m.p.kosinski@gmail.com>
@@ -12,6 +12,13 @@ Description: Package provides CNV (based on Merge snp) datasets from The Cancer
 License: GPL-2
 LazyData: TRUE
 Repository: Bioconductor
-BugReports: https://github.com/RTCGA/RTCGA.data/issues
-Depends: R (>= 3.2.0), RTCGA
-RoxygenNote: 5.0.0
+BugReports: https://github.com/RTCGA/RTCGA/issues
+Depends:
+    R (>= 3.2.0),
+    RTCGA
+Suggests:
+    knitr
+biocViews: Annotation Data
+VignetteBuilder: knitr
+NeedsCompilation: no
+RoxygenNote: 5.0.1

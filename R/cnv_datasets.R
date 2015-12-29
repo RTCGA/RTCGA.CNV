@@ -2,10 +2,10 @@
 #' CNV datasets from TCGA project
 #'
 #' Package provides CNV datasets from The Cancer Genome Atlas Project for all cohorts types from \url{http://gdac.broadinstitute.org/}.
-#' Data were downloaded using \link{RTCGA-package} and contain snapshots for the date: \code{2015-11-01}. The process is described here: \url{http://rtcga.github.io/RTCGA.data/}.
+#' Data were downloaded using \link{RTCGA-package} and contain snapshots for the date: \code{2015-11-01}. The process is described here: \url{http://rtcga.github.io/RTCGA/}.
 #' Use cases, examples and information about datasets in \pkg{RTCGA.data} family can be found here: \code{browseVignettes("RTCGA")}
 #' Data format is explained here https://wiki.nci.nih.gov/display/TCGA/Retrieving+Data+Using+the+Data+Matrix
-#' 
+#' Converting \pkg{RTCGA.CNV} datasets from \code{data.frames} to Bioconductor classes is explained here \link{convertTCGA}.
 #' @details \code{browseVignettes("RTCGA")}
 #' 
 #' @return Data frames with CNV data.
